@@ -1,0 +1,63 @@
+body{
+    background-image: url('coffee.png');
+}
+h1, h2, h3{
+    text-align: center;
+    color: burlywood;
+}
+table, th, td{
+    color: burlywood;
+    border: 1px solid burlywood;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 40%;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+span{
+    margin-left: 40px;
+}
+.main{
+    margin-top: 30px;
+
+}
+.coffee{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#total{
+    height: 20px;
+}
+.btn{
+    padding: 5px 15px;
+    border: 2px solid rgb(117, 103, 103);
+    font-size: 1em;
+    background-color: burlywood;
+    border-radius: 10px;
+    margin: 5px;
+}
+.btn:hover{
+    background-color: lightgoldenrodyellow;
+}
+.endButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.btn-c{
+    width: 30%;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .coffee{
+        display: inline;
+    }
+    .coffee2{
+        text-align: end;
+    }
+}
+
