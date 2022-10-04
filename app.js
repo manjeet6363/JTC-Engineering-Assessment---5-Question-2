@@ -8,12 +8,16 @@ const espressoLatte = document.querySelector('#Espresso-latte');
 
 let arr1 = [];
 let bill = [];
-let k = 0;
 let espressoCount = 0;
 espresso.addEventListener('click', ()=>{
     espressoCount++;
     arr1.push(100);
-    espresso.innerText = `Espresso  ${espressoCount}`;
+    if(espressoCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        espresso.appendChild(counterBadge)
+        counterBadge.innerText = ` ${espressoCount}`;
+    }
     let p = `Espresso : ${espressoCount}`;
     bill[0] = p;
 })
@@ -22,7 +26,12 @@ let espressoMilkCount = 0;
 espressoMilk.addEventListener('click', ()=>{
     espressoMilkCount++;
     arr1.push(60);
-    espressoMilk.innerText = `Milk ${espressoMilkCount}`;
+    if(espressoMilkCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        espressoMilk.appendChild(counterBadge)
+        counterBadge.innerText = ` ${espressoMilkCount}`;
+    }
     let p = `Milk : ${espressoMilkCount}`;
     bill[1] = p;
 })
@@ -31,7 +40,12 @@ let espressoCreamCount = 0;
 espressoCream.addEventListener('click', ()=>{
     espressoCreamCount++;
     arr1.push(75);
-    espressoCream.innerText = `Cream ${espressoCreamCount}`;
+    if(espressoCreamCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        espressoCream.appendChild(counterBadge)
+        counterBadge.innerText = ` ${espressoCreamCount}`;
+    }
     let p = `Cream : ${espressoCreamCount}`;
     bill[2] = p;
 })
@@ -40,7 +54,12 @@ let espressoLatteCount = 0;
 espressoLatte.addEventListener('click', ()=>{
     espressoLatteCount++;
     arr1.push(100);
-    espressoLatte.innerText = `Latte ${espressoLatteCount}`;
+    if(espressoLatteCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        espressoLatte.appendChild(counterBadge)
+        counterBadge.innerText = ` ${espressoLatteCount}`;
+    }
     let p = `Latte : ${espressoLatteCount}`;
     bill[3] = p;
 })
@@ -57,7 +76,12 @@ let cappuccinoCount = 0;
 cappuccino.addEventListener('click', ()=>{
     cappuccinoCount++;
     arr2.push(150);
-    cappuccino.innerText = `Cappuccino  ${cappuccinoCount}`;
+    if(cappuccinoCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        cappuccino.appendChild(counterBadge)
+        counterBadge.innerText = ` ${cappuccinoCount}`;
+    }
     let p = `Cappuccino : ${cappuccinoCount}`;
     bill[4] = p;
 })
@@ -66,7 +90,12 @@ let cappuccinoMilkCount = 0;
 cappuccinoMilk.addEventListener('click', ()=>{
     cappuccinoMilkCount++;
     arr2.push(80);
-    cappuccinoMilk.innerText = `Milk ${cappuccinoMilkCount}`;
+    if(cappuccinoMilkCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        cappuccinoMilk.appendChild(counterBadge)
+        counterBadge.innerText = ` ${cappuccinoMilkCount}`;
+    }
     let p = `Milk : ${cappuccinoMilkCount}`;
     bill[5] = p;
 })
@@ -75,7 +104,12 @@ let cappuccinoCreamCount = 0;
 cappuccinoCream.addEventListener('click', ()=>{
     cappuccinoCreamCount++;
     arr2.push(90);
-    cappuccinoCream.innerText = `Cream ${cappuccinoCreamCount}`;
+    if(cappuccinoCreamCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        cappuccinoCream.appendChild(counterBadge)
+        counterBadge.innerText = ` ${cappuccinoCreamCount}`;
+    }
     let p = `Cream : ${cappuccinoCreamCount}`;
     bill[6] = p;
 })
@@ -84,7 +118,12 @@ let cappuccinoLatteCount = 0;
 cappuccinoLatte.addEventListener('click', ()=>{
     cappuccinoLatteCount++;
     arr2.push(120);
-    cappuccinoLatte.innerText = `Latte ${cappuccinoLatteCount}`;
+    if(cappuccinoLatteCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        cappuccinoLatte.appendChild(counterBadge)
+        counterBadge.innerText = ` ${cappuccinoLatteCount}`;
+    }
     let p = `Latte : ${cappuccinoLatteCount}`;
     bill[7] = p;
 })
@@ -101,7 +140,12 @@ let latteCount = 0;
 latte.addEventListener('click', ()=>{
     latteCount++;
     arr3.push(200);
-    latte.innerText = `Latte  ${latteCount}`;
+    if(latteCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        latte.appendChild(counterBadge)
+        counterBadge.innerText = ` ${latteCount}`;
+    }
     let p = `Latte : ${latteCount}`;
     bill[8] = p;
 })
@@ -110,7 +154,12 @@ let latteMilkCount = 0;
 latteMilk.addEventListener('click', ()=>{
     latteMilkCount++;
     arr3.push(100);
-    latteMilk.innerText = `Milk ${latteMilkCount}`;
+    if(latteMilkCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        latteMilk.appendChild(counterBadge)
+        counterBadge.innerText = ` ${latteMilkCount}`;
+    }
     let p = `Milk : ${latteMilkCount}`;
     bill[9] = p;
 })
@@ -119,7 +168,12 @@ let latteCreamCount = 0;
 latteCream.addEventListener('click', ()=>{
     latteCreamCount++;
     arr3.push(125);
-    latteCream.innerText = `Cream ${latteCreamCount}`;
+    if(latteCreamCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        latteCream.appendChild(counterBadge)
+        counterBadge.innerText = ` ${latteCreamCount}`;
+    }
     let p = `Cream : ${latteCreamCount}`;
     bill[10] = p;
 })
@@ -128,7 +182,12 @@ let latteLatteCount = 0;
 latteLatte.addEventListener('click', ()=>{
     latteLatteCount++;
     arr3.push(150);
-    latteLatte.innerText = `Latte ${latteLatteCount}`;
+    if(latteLatteCount > 0){
+        let counterBadge = document.createElement('span');
+        counterBadge.setAttribute('class', 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger')
+        latteLatte.appendChild(counterBadge)
+        counterBadge.innerText = ` ${latteLatteCount}`;
+    }
     let p = `Latte : ${latteLatteCount}`;
     bill[11] = p;
 })
@@ -136,7 +195,8 @@ latteLatte.addEventListener('click', ()=>{
 
 
 let sum = 0
-function Calculate(){
+const calculate = document.querySelector('#calculate');
+calculate.addEventListener('click', ()=>{
     let arr = [...arr1, ...arr2, ...arr3];
     if(arr.length < 1){
         window.alert("Please Select Your Coffee First")
@@ -147,9 +207,11 @@ function Calculate(){
         sum += ele;
     })
     total.innerText = `Your bill is ${sum} Rs.`;
-}
+})
 
-function Print(){
+
+const print = document.querySelector('#print');
+print.addEventListener('click', ()=>{
     if(bill.length < 1){
         window.alert("Please Select Your Coffee First")
         return;
@@ -159,14 +221,18 @@ function Print(){
         x += ele + "\n"
     })
     let container = document.querySelector('.container');
-    document.querySelector('.menu').style.display = 'none';
-    document.querySelector('.main').style.display = 'none';
-    document.querySelector('.endButton').style.display = 'none';
+    document.querySelector('#menu').style.display = 'none';
+    document.querySelector('#main').style.display = 'none';
+    document.querySelector('#endButton').style.display = 'none';
+    document.querySelector('#total').innerText = '';
+    document.querySelector('#backgroundVideo').style.display = 'none';
+    document.body.style.backgroundImage = "url('coffee.png')";
     let printBill = document.createElement('h3');
-    printBill.innerText = "Items \n"+x+"\n"+"Total : "+sum;
+    printBill.innerText = "Your Items \n"+x+"\n"+"Total : "+sum;
     container.appendChild(printBill)
     window.print()
-}
+})
+
 
 
 
